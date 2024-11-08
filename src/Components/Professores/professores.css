@@ -1,0 +1,48 @@
+.Box {
+    padding: 20px;
+    background-color: #ffffff;
+   
+}
+
+.Box-header h1 {
+    font-size: 2rem;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+
+}
+
+.professores-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: black;
+}
+
+.professor {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.youtube-link {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 10px;
+    color: #ff0000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.youtube-link:hover {
+    text-decoration: underline;
+}
+
+.youtube-link svg {
+    margin-right: 8px;
+}
+p{
+
+    color: #000000;
+}
