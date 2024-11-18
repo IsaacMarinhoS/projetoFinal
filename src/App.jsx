@@ -6,7 +6,8 @@ import { Header } from './Components/Header/header'
 import { Favoritos } from './Components/Favoritos/favoritos';
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { BlocoDeNotas } from './Components/BlocoDeNotas/BlocoDeNotas';
-import { Professores } from './Components/Professores/Professores';
+import { Professor } from './Components/Professores/professores';
+
 
 
 
@@ -22,7 +23,7 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/favoritos' element={<Favoritos/>}/>
         <Route path='/bloco-de-notas' element={<BlocoDeNotas/>} />
-        <Route path='/ajuda-nos-estudos' element={<Professores/>} />
+        <Route path='/ajuda-nos-estudos' element={<Professor/>} />
 
        
         

@@ -1,9 +1,8 @@
 import React from 'react';
-import { FaYoutube } from 'react-icons/fa'; 
-import './professores.css';
+import { FaYoutube } from 'react-icons/fa';
+import styles from "./Professores.module.css";
 
-
-export function Professores() {
+export function Professor() {
     const professores = [
         {
             nome: 'Professor Robson Liers',
@@ -25,22 +24,22 @@ export function Professores() {
             canal: 'https://www.youtube.com/@FelippeLoureiroProf',
             descricao: 'Focado em Raciocínio Lógico para concursos.'
         },
-         {
+        {
             nome: 'LAC concursos',
             canal: 'https://www.youtube.com/@LacConcursosCanal',
             descricao: 'Focado em Direito Constitucional, Direito Administrativo, Raciocínio Lógico.'
         },
-         {
+        {
             nome: 'Professor Ricardo Dantas',
             canal: 'https://www.youtube.com/c/ProfessorRicardoMarc%C3%ADlio/featured',
             descricao: 'Focado em Direito Administrativo, Direito Constitucional, Direito Tributário e Direito Penal.'
         },
-         {
+        {
             nome: 'Professor Sandro Curió',
             canal: 'https://www.youtube.com/@sandrocuriodicasdemat',
             descricao: 'Focado em  Raciocínio Lógico, Matemática para Concursos, Estratégias de Estudo.'
         },
-         {
+        {
             nome: 'Professora Gis com Giz',
             canal: 'https://www.youtube.com/@Giscomgiz',
             descricao: 'Focado em Matemática, Raciocínio Lógico, Dicas para Concursos.'
@@ -48,20 +47,20 @@ export function Professores() {
     ];
 
     return (
-        <div className="Box">
-            <header className="Box-header">
+        <div className={styles.Box}>
+            <header className={styles.BoxHeader}>
                 <h1>Melhores Professores para Concursos</h1>
                 <p>Confira alguns dos melhores professores para se preparar para concursos!</p>
-                <div className="professores-list">
+                <div className={styles.professoreslist}>
                     {professores.map((professor) => (
-                        <div key={professor.nome} className="professor">
+                        <div key={professor.nome} className={styles.professor}>
                             <h3>{professor.nome}</h3>
                             <p>{professor.descricao}</p>
                             <a
                                 href={professor.canal}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="youtube-link"
+                                className={styles.youtubelink}
                             >
                                 <FaYoutube /> Acessar Canal no YouTube
                             </a>

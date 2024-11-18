@@ -1,18 +1,36 @@
-.Box {
-    padding: 20px;
-    background-color: #ffffff;
-   
-}
 
-.Box-header h1 {
+.Box {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  
+  [data-theme="dark"] .Box {
+    background-color: #333;
+    color: #f0f0f0;
+  }
+  
+
+  
+
+  [data-theme="dark"] .youtubelink {
+    color: #ff0000; 
+  }
+
+  [data-theme ="dark"] .professor{
+   background-color: #333;
+   border: 1px solid #474646;
+  }
+  
+
+.BoxHeader h1 {
     font-size: 2rem;
     color: #000000;
-    display: flex;
-    justify-content: center;
+   
 
 }
 
-.professores-list {
+.professoreslist {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -23,10 +41,11 @@
     background-color: #fff;
     padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(197, 187, 187, 0.1);
+    
 }
 
-.youtube-link {
+.youtubelink {
     display: inline-flex;
     align-items: center;
     margin-top: 10px;
